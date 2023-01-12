@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Femi Awosika</h1>
 <h3 align="center">A passionate Cloud Engineer from Spain</h3>
-(img align="right" alt="Coding" width="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4rmv-dwbGxXLhDfpU9WblefeJYADsyWLlQEF-V38wKQpZ_znQ8oHd8jkZP7vhFEKyRJM&usqp=CAU")
+(img align="right" alt="Coding" width="400" src="![Launch Instance](https://user-images.githubusercontent.com/120579796/212163780-f55f4576-bc4f-4d6e-9c92-47b69f6f0de5.jpg)")
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=femifoly&label=Profile%20views&color=0e75b6&style=flat" alt="femifoly" /> </p>
 
