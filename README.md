@@ -1,2 +1,4 @@
-# DevOps-Project
-A library of my DevOps Projects
+## Hi 👋, I'm Femi
+   This is a library of my DevOps projects..
+   I hope you'll like them.
+   Thanks 
