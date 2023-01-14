@@ -1,6 +1,5 @@
 <h1 align="center">Hi 👋, I'm Femi Awosika</h1>
 <h3 align="center">A passionate Cloud Engineer from Spain</h3>
-(img align="right" alt="Coding" width="400" src="![Launch Instance](https://user-images.githubusercontent.com/120579796/212163780-f55f4576-bc4f-4d6e-9c92-47b69f6f0de5.jpg"...)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=femifoly&label=Profile%20views&color=0e75b6&style=flat" alt="femifoly" /> </p>
 
@@ -25,8 +24,3 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=femifoly&show_icons=true&locale=en" alt="femifoly" /></p>
 
-## Hi 👋, I'm Femi
-   This is a library of my DevOps projects..
-   I hope you'll like them.
-  
-  **Thanks** 
