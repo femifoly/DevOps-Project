@@ -75,6 +75,7 @@ Our server is up and running
 ## Connecting to EC2 terminal
 
 After installing Mobaxterm, I confirgured the tool to connect to our guest operating system (Ubuntu) runnubg on AWS virtual server.
+---
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob.jpg)
 
@@ -93,14 +94,12 @@ To do this:
 * Then click on the tab to upload the .PEM key we saved earlier when creating the key pair.
 * Click ok and click accept on the pop-up window.
 ---
-
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
 
 Login detail is required to authorise access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hostusername.jpg)
----
 
 As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
-
+---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
