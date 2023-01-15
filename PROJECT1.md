@@ -57,6 +57,7 @@ And finally, the most important is the **Cost**
 ---
 
 Next, I configured the network setting by creating a new segurity group that will act as firewall to control traffic in and out of our instance. For me to be be able to access the instance from my windows computer and from the internet, I need to enable SSHport 22 and HTTP port 80. To do this, I created inbound rules for the ports. Because my computer runs on Windows, I will need to download and install an ssh client to establish conectivity with the instance. For this project, I will install Mobarxterm.
+**Note** - AWS has created a default Virtual Private Cloud (VPC) where the instance server is situated which means both public and private IPs have been authomatically generated for the instance. I will leave the root storage setting as default for the purpose of this project.
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/sg.jpg)
 ---
