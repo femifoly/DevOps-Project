@@ -39,4 +39,5 @@ And finally, the most important is the **Cost**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC21.jpg)
 ---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC22.jpg)
-
+---
+**Ububtu Server 22.04, t2.micro family type is selected to run on the instance**
