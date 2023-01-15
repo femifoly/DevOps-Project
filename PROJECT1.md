@@ -95,10 +95,9 @@ To do this:
 ---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
 
+Login detail is required to authentic access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hostusername.jpg)
-
-Login detail is required to authentic access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
 
 As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
 
