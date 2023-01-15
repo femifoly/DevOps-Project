@@ -88,9 +88,6 @@ To do this:
 * Enable use private key
 ---
 
-![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
----
-
 * Then click on the tab to upload the .PEM key we saved earlier when creating the key pair.
 * Click ok and click accept on the pop-up window.
 ---
@@ -103,3 +100,5 @@ To do this:
 Login detail is required to authentic access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
 
 As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
