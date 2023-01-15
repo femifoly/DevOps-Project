@@ -33,12 +33,12 @@ And finally, the most important is the **Cost**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/region.jpg)
 ---
 
-**Click on Services, Compute then select EC2**
+**Click on Services, Compute then select EC2.**
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC2.jpg)
 ---
 
-**Scroll down, click Lauch Instances and name your new instance**
+**Scroll down, click Lauch Instances and name your new instance.**
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC21.jpg)
 ---
@@ -51,7 +51,7 @@ And finally, the most important is the **Cost**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC23.jpg)
 ---
 
-**Next, a key pair is created to enable secure connection to the instance. The private key (.pem) should be saved securely to prevent unauthorized access to the server**
+**Next, a key pair is created to enable secure connection to the instance. The private key (.pem) should be saved securely to prevent unauthorized access to the server.**
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC24.jpg)
 
