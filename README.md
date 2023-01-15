@@ -1,3 +1,4 @@
+<p align="center"> <img src="https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/banner.jpg" alt="Coding" width="1600" height="130"/> </p>
 <h1 align="center">Hi 👋, I'm Femi Awosika</h1>
 <h3 align="center">A passionate Cloud Engineer from Spain</h3>
 
