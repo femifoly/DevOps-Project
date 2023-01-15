@@ -22,7 +22,7 @@ Before I get into the fundamentals, I created an AWS account and also created a 
 AWS service for hosting a virtual machine is the Elastic Compute Cloud (ECS). I am going to create an EC2 instance to host our VM which will run Ubuntu (Linux 
 Distribution).
 
-Before proceeding with the creation of an EC2 instance, select the desired and closest region to you. the following are the factors to consider before deciding the AWS region to choose:
+Before proceeding with the creation of an EC2 instance, select the desired and closest region to you. The following are the factors to consider before deciding the AWS region to choose:
 
 * Latency and proximity
 
