@@ -31,18 +31,27 @@ Distribution). Before proceeding with the creation of an EC2 instance, Select th
 And finally, the most important is the **Cost**
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/region.jpg)
-----
+---
+
 **Click on Services, Compute then select EC2**
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC2.jpg)
 ---
+
 **Scroll down, click Lauch Instances and name your new instance**
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC21.jpg)
 ---
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC22.jpg)
 ---
+
 **Ubuntu Server 22.04, t2.micro family type is selected to run on the instance.**
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC23.jpg)
 ---
-**Next, a key pair is created to enable secure connection to the instance**
+
+**Next, a key pair is created to enable secure connection to the instance. The private key (.pem) should be saved securely to prevent unauthorized access to the server**
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC24.jpg)
 
