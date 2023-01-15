@@ -18,3 +18,20 @@ Before I get into the fundamentals, I created an AWS account and also created a 
 
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/iamuser.jpg)
+
+AWS service for hosting a virtual machine is the Elastic Compute Cloud (ECS). I am going to create an EC2 instance to host our VM which will run Ubuntu (Linux 
+Distribution). Before proceeding with the creation of an EC2 instance, Select the desired and closest region to you. the following are the factors to consider before deciding the AWS region to choose:
+
+* Latency and proximity
+
+* Security and regulatory compliance
+
+* Service Level Agreements (SLA)
+
+And finally, the most important is the **Cost**
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/region.jpg)
+
+Click on Services, Compute then select EC2
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC2.jpg)
+
