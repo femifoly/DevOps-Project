@@ -103,5 +103,6 @@ Login detail is required to authorise access to our remote server. To acquire th
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hostusername.jpg)
 
 As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
+
 ---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
