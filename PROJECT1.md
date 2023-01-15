@@ -93,6 +93,7 @@ To do this:
 * Then click on the tab to upload the .PEM key we saved earlier when creating the key pair.
 * Click ok and click accept on the pop-up window.
 ---
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
 
 Login detail is required to authorise access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
