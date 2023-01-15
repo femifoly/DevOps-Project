@@ -86,6 +86,7 @@ To do this:
 ---
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/moba.jpg)
 ---
 
