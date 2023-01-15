@@ -31,11 +31,12 @@ Distribution). Before proceeding with the creation of an EC2 instance, Select th
 And finally, the most important is the **Cost**
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/region.jpg)
-
+----
 **Click on Services, Compute then select EC2**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC2.jpg)
-
+---
 **Scroll down, click Lauch Instances and name your new instance**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC21.jpg)
+---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC22.jpg)
 
