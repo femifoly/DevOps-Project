@@ -12,5 +12,7 @@ The fuctionality of the Stack is hereby listed as:
 
 -------------
 Before I get into the fundamentals, I created an AWS account and also created a IAM User for the account. It is best practice to access the AWS account as a user rather than accessing it as a root user. 
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/iamuser1.jpg)
 
-![IAM User created](C:\Users\Femi\Pictures\PBL Project - LAMP\Iamuser1.png)
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/iamuser.jpg)
