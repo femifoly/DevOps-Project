@@ -62,5 +62,10 @@ Next, I configured the network setting by creating a new segurity group that wil
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/sg.jpg)
 ---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/sg1.jpg)
+---
 
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/instance.jpg)
+---
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/instance1.jpg)
 
