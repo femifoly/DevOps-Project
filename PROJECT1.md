@@ -64,6 +64,7 @@ Next, I configured the network setting by creating a new segurity group that wil
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/sg1.jpg)
 ---
 
+Our server is up and running
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/instance.jpg)
 ---
 
