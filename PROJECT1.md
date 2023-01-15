@@ -87,13 +87,14 @@ To do this:
 * Copy the public IP address from the instance into the remote host
 * Click on advance SSH settings
 * Enable use private key
----
+--
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/moba.jpg)
 
 * Then click on the tab to upload the .PEM key we saved earlier when creating the key pair.
 * Click ok and click accept on the pop-up window.
 ---
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
 
 Login detail is required to authorise access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
