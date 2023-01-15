@@ -10,8 +10,10 @@ The fuctionality of the Stack is hereby listed as:
 | MySQL | Database |
 | PHP | Programing Language |
 
--------------
+---
 Before I get into the fundamentals, I created an AWS account and also created a IAM User for the account. It is best practice to access the AWS account as a user rather than accessing it as a root user. 
+
+
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/iamuser1.jpg)
 
 
