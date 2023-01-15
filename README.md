@@ -12,7 +12,6 @@
 - 📫 How to reach me **femifoly@gmail.com**
 
 - ⚡ Fun fact **I like games**
-<h3 align="left">Connect with me:</h3>
 
 <p align="right"> <img src="https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hdadrmia.gif" alt="Coding" width="300"/> </p>
 <p align="left">
