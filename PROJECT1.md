@@ -95,7 +95,7 @@ To do this:
 ---
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
 
-Login detail is required to authentic access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
+Login detail is required to authorise access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hostusername.jpg)
 
