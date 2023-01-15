@@ -58,7 +58,7 @@ And finally, the most important is the **Cost**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC24.jpg)
 ---
 
-Next, I configured the network setting by creating a new segurity group that will act as firewall to control traffic in and out of our instance. For me to be be able to access the instance from my windows computer and from the internet, I need to enable SSHport 22 and HTTP port 80. To do this, I created inbound rules for the ports. Because my computer runs on Windows, I will need to download and install an ssh client to establish conectivity with the instance. For this project, I will install Mobarxterm.
+Next, I configured the network setting by creating a new security group that will act as firewall to control traffic in and out of our instance. For me to be be able to access the instance from my windows computer and from the internet, I need to enable SSHport 22 and HTTP port 80. To do this, I created inbound rules for the ports. Because my computer runs on Windows, I will need to download and install an ssh client to establish connectivity with the instance. For this project, I will install Mobarxterm.
 **Note** - EC2 has created a default Virtual Private Cloud (VPC) where the instance server is situated which means both public and private IPs have been authomatically generated for the instance. I will leave the root storage setting as default for the purpose of this project. We can go ahead and launch the new instance!
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/sg.jpg)
@@ -72,3 +72,36 @@ Our server is up and running
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/instance1.jpg)
 
+## Connecting to EC2 terminal
+
+After installing Mobaxterm, I confirgured the tool to connect to our guest operating system (Ubuntu) running on AWS virtual server. 
+
+---
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob.jpg)
+
+To do this:
+* Open a new session by clicking session in the top left corner
+* Click on SSH with key icon
+---
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob1.jpg)
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/moba.jpg)
+---
+
+* Copy the public IP address from the instance into the remote host
+* Click on advance SSH settings
+* Enable use private key
+---
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
+---
+
+* Then click on the tab to upload the .PEM key we saved earlier when creating the key pair.
+* Click ok and click accept on the pop-up window.
+---
+
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/hostusername.jpg)
+Login detail is required to authentic access to our remote server. To acquire this, click connect on the instance page and you will the username required by the SSH Client. Ubuntu is our username in this case.
+
+As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
