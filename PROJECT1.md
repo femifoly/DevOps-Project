@@ -45,3 +45,4 @@ And finally, the most important is the **Cost**
 ---
 **Next, a key pair is created to enable secure connection to the instance**
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/EC24.jpg)
+
