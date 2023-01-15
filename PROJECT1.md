@@ -74,12 +74,10 @@ Our server is up and running
 
 ## Connecting to EC2 terminal
 
-
 After installing Mobaxterm, I confirgured the tool to connect to our guest operating system (Ubuntu) runnubg on AWS virtual server.
 
----
-
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob.jpg)
+---
 
 To do this:
 * Open a new session by clicking session in the top left corner
