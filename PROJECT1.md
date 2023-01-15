@@ -74,6 +74,7 @@ Our server is up and running
 
 ## Connecting to EC2 terminal
 
+
 After installing Mobaxterm, I confirgured the tool to connect to our guest operating system (Ubuntu) runnubg on AWS virtual server.
 
 ---
@@ -83,8 +84,6 @@ After installing Mobaxterm, I confirgured the tool to connect to our guest opera
 To do this:
 * Open a new session by clicking session in the top left corner
 * Click on SSH with key icon
----
-
 * Copy the public IP address from the instance into the remote host
 * Click on advance SSH settings
 * Enable use private key
