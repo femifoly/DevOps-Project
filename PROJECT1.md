@@ -110,4 +110,5 @@ As you can see, the SSH client has acquired the instance private IP and yes we h
 
 ```
 sudo apt update
+sudo apt install apache2
 ```
