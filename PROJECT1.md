@@ -103,3 +103,7 @@ Login detail is required to authorise access to our remote server. To acquire th
 As you can see, the SSH client has acquired the instance private IP and yes we have access to our remote server!
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mob2.jpg)
+=======
+
+### Having launched our instance on AWS to run Linux distribution - Ubuntu - I will commence the project to deploy a web solution based on LAMP stack by implementing the steps bellow:
+## step 1
