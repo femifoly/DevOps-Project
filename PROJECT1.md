@@ -108,7 +108,12 @@ As you can see, the SSH client has acquired the instance private IP and yes we h
 ### Having launched our instance on AWS to run Linux distribution - Ubuntu - I will commence the project to deploy a web solution based on LAMP stack by implementing the steps bellow:
 # Step 1 - Installing Apache and Updating the Firewall
 
+* Apache is installed using the Ubuntu package manager ~ *apt*
 ```
 sudo apt update
 sudo apt install apache2
+```
+* To verify that Apache2 is installed and running as a service on our OS, use the following commmand:
+```
+sudo systemctl status apache2
 ```
