@@ -131,3 +131,5 @@ $ curl http://localhost:80
 ```
 http//<your public IP>:80
 ```
+* If you see the following page, then your web server is now correctly installed and accessible through your firewall:
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/apache2.jpg)
