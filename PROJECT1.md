@@ -118,3 +118,6 @@ sudo apt install apache2
 sudo systemctl status apache2
 ```
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/apache1.jpg?raw=true)
+Now that we have installed our web server, we need to open port 80 and port 443 to allow access to the server through the internet.
+To do this, we need to to go back to our EC2 instance and add new inboubd rules to enable the ports.
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/tcp%20.jpg?raw=true)
