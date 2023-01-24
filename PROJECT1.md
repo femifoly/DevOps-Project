@@ -121,3 +121,13 @@ sudo systemctl status apache2
 Now that we have installed our web server, we need to open port 80 and port 443 to allow access to the server through the internet.
 To do this, we need to to go back to our EC2 instance and add new inboubd rules to enable the ports.
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/tcp%20.jpg?raw=true)
+
+* To verify and check that we can access it locally in our ubuntu shell and from the internet, run:
+```
+$ curl http://localhost:80
+```
+
+* To confirm that our web server is up and running, copy and paste your public IP in a browser as follows: 
+```
+http//<your public IP>:80
+```
