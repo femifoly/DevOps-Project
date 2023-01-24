@@ -117,3 +117,4 @@ sudo apt install apache2
 ```
 sudo systemctl status apache2
 ```
+![]("C:\Users\femif\Desktop\Git picture\apache1.jpg")
