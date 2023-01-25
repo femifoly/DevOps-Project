@@ -151,10 +151,9 @@ This will allow you to configure the VALIDATE PASSWORD PLUGIN.
 sudo mysql_secure_installation
 ```
 * When you're finished, test if you're able to login to the MySQL Console by typing:
-
-![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 ```
 sudo mysql
 ```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
 
