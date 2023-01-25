@@ -227,13 +227,13 @@ sudo a2ensite projectlamp
 ```
 sudo a2dissite 000-default
 ```
-![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh4.jpg)
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh3.jpg)
 * To make sure your configuration file doesn't contain syntax errors, run:
 
 ```
 sudo apache2ctl configtest
 ```
-![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh3.jpg)
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh4.jpg)
 * Finally, reload Apache so these changes take effect:
 
 ```
