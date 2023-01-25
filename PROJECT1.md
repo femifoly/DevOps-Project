@@ -108,7 +108,7 @@ As you can see, the SSH client has acquired the instance private IP and yes we h
 ### Having launched our instance on AWS to run Linux distribution - Ubuntu - I will commence the project to deploy a web solution based on LAMP stack by implementing the steps bellow:
 
 
-# Step 1 - Installing Apache and Updating the Firewall
+## Step 1 - Installing Apache and Updating the Firewall
 
 * Apache is installed using the Ubuntu package manager ~ *apt*
 ```
@@ -223,4 +223,53 @@ sudo apache2ctl configtest
 
 ```
 sudo systemctl reload apache2
+```
+The new website is now active, but the web root /var/www/projectlamp is still empty. Create an index.html file in that location so that we can test that the virtual host works as expected:
+
+* Type and run :
+* 
+```
+sudo vi /var/www/projectlamp/index.html
+```
+
+From the browser, I can open the website URL using IP address:
+
+```
+http://<public-ip-address>:80
+```
+or can also browse using the public dns.
+
+```
+http://<Public-DNS-Name>:80
+```
+You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
+
+To check your Public IP from the Ubuntu shell, run :
+```
+$(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 
+$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+```
+## STEP 5 - Enable PHP on the website
+
+With the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. Once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular application page.
+
+In case you want to change this behavior, you’ll need to edit the /etc/apache2/mods-enabled/dir.conf file and change the order in which the index.php file is listed within the DirectoryIndex directive:
+```
+sudo vim /etc/apache2/mods-enabled/dir.conf
+```
+#Change this: #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm #To this: DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+After saving and closing the file, you will need to reload Apache so the changes take effect:
+```
+sudo systemctl reload apache2
+```
+Finally, we will create a PHP Script to test the PHP is correctly installed and configured on our Server.
+Now that we have a custom location to host our website's files and folders, we'll create a PHP test script to confirm that Apache is able to handle and process requests for PHP files.
+Create a new file named index.php inside our custom web root folder:
+```
+vim /var/www/projectlamp/index.php
+```
+This will open a blank file. Add the following text, which is valid PHP code, inside the file:
+```
+<?php
+phpinfo();
 ```
