@@ -216,6 +216,13 @@ sudo a2dissite 000-default
 * To make sure your configuration file doesn't contain syntax errors, run :
 ```
 To make sure your configuration file doesn't contain syntax errors, run :
+
 ```
 sudo apache2ctl configtest
+```
+
+* Finally, reload Apache so these changes take effect:
+
+```
+sudo systemctl reload apache2
 ```
