@@ -163,3 +163,4 @@ We have installed Apache to serve our content and MySQL installed to store and m
 * Run the following command to install all 3 packages:
 ```
 $ sudo apt -y install php libapache2-mod-php php-mysql
+```
