@@ -3,7 +3,7 @@
 <h3 align="center">A passionate Cloud Engineer from Spain</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=femifoly&label=Profile%20views&color=0e75b6&style=flat" alt="femifoly" /> </p>
-- 🌱 I’m currently learning AWS, EC2, S3, Linux, Python.
+- 🌱 I’m currently learning AWS, EC2, S3, Linux, Networking, Python.
 
 - 👨‍💻 All of my projects are available at [https://github.com/femifoly](https://github.com/femifoly)
 
