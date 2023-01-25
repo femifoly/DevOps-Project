@@ -106,6 +106,8 @@ As you can see, the SSH client has acquired the instance private IP and yes we h
 =======
 
 ### Having launched our instance on AWS to run Linux distribution - Ubuntu - I will commence the project to deploy a web solution based on LAMP stack by implementing the steps bellow:
+
+
 # Step 1 - Installing Apache and Updating the Firewall
 
 * Apache is installed using the Ubuntu package manager ~ *apt*
@@ -124,7 +126,7 @@ To do this, we need to to go back to our EC2 instance and add new inboubd rules 
 
 * To verify and check that we can access it locally in our ubuntu shell and from the internet, run:
 ```
-$ curl http://localhost:80
+curl http://localhost:80
 ```
 
 * To confirm that our web server is up and running, copy and paste your public IP in a browser as follows: 
@@ -148,19 +150,72 @@ After the installation it is recommended that we run a security script that come
 Start the interactive Script by running:
 This will allow you to configure the VALIDATE PASSWORD PLUGIN.
 ```
-$ sudo mysql_secure_installation
+sudo mysql_secure_installation
 ```
 * To verify access to the MySQL Console, run the following command:
 ```
-$ sudo mysql
+sudo mysql
 ```
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
-## STEP 2 - Installing PHP
+## STEP 3 - Installing PHP
 
 We have installed Apache to serve our content and MySQL installed to store and manage our data. PHP is the component of our setup that will process code to display dynamic content to the final user. In addition to the php package, we’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. We’ll also need libapache2-mod-php to enable Apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
 
 * Run the following command to install all 3 packages:
 ```
-$ sudo apt -y install php libapache2-mod-php php-mysql
+sudo apt -y install php libapache2-mod-php php-mysql
+```
+At this point, LAMP stack is completely installed and fully operational.
+To test our setup with a PHP Script, it's best to setup a proper Apache Virtual Host to host our website's file and folders. Virtual Host allows multiple websites to be located on a single machine and users of the websites will not even notice it. This will take us to the next step.
+
+## STEP 4 - Creating a Virtual Host for your Website using Apache
+
+* A domain called projectlamp is set up for this project.
+
+Apache on Ubuntu 22.04 has one server block enabled by default that is configured to serve documents from the /var/www/html directory. We will leave this configuration as is and will add our own directory next next to the default one.
+
+* Create the directory for projectlamp using ‘mkdir’ command as follows:
+```
+sudo mkdir /var/www/projectlamp
+```
+
+* Next, assign ownership of the directory with the $USER environment variable, which will reference current user.
+```
+sudo chown -R $USER:$USER /var/www/projectlamp
+```
+* We can now open a new configuration file in Apache’s sites-available directory using our preferred command-line editor. Here, we’ll be using vi
+```
+sudo vi /etc/apache2/sites-available/projectlamp.conf
+```
+This will create a new blank file. Paste in the following bare-bones configuration by hitting on i on the keyboard to enter the insert mode, and paste the text:
+```
+<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+* To save and close the file, press ESC and type :wqa!
+* Run the following command to view and confirm the new files in the sites available directory:
+```
+sudo ls /etc/apache2/sites-available
+```
+With this VirtualHost configuration, we’re telling Apache to serve our website using /var/www/projectlamp as the web root directory. If we like to test Apache without a domain name, we can remove or comment out the options ServerName and ServerAlias by adding a # character in the beginning of each option’s lines. Adding the # character there will tell the program to skip processing the instructions on those lines.
+* We can now use a2ensite command to enable the new virtual host:
+```
+sudo a2ensite projectlamp
+```
+* We might need to disable the default website that comes installed with Apache. This is required if we are not using a custom domain name, because in this case Apache’s default configuration would overwrite our virtual host. To disable Apache’sdefault website use a2dissite command, type:
+```
+sudo a2dissite 000-default
+```
+* To make sure your configuration file doesn't contain syntax errors, run :
+```
+To make sure your configuration file doesn't contain syntax errors, run :
+```
+sudo apache2ctl configtest
 ```
