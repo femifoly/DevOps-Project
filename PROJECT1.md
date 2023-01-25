@@ -142,11 +142,14 @@ To install mysql-server, run:
 sudo apt -y install mysql-server
 ```
 After the installation it is recommended that we run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lockdown access to our database system.
+
 [](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql.jpg)
+
 Start the interactive Script by running:
 ```
 sudo mysql_secure_installation
 ```
-This will allo you to configure the VALIDATE PASSWORD PLUGIN.
+This will allow you to configure the VALIDATE PASSWORD PLUGIN.
+
 [](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
