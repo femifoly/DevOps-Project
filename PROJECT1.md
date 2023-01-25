@@ -146,10 +146,15 @@ After the installation it is recommended that we run a security script that come
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql.jpg)
 
 Start the interactive Script by running:
+This will allow you to configure the VALIDATE PASSWORD PLUGIN.
 ```
 sudo mysql_secure_installation
 ```
-This will allow you to configure the VALIDATE PASSWORD PLUGIN.
+* When you're finished, test if you're able to login to the MySQL Console by typing:
 
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
+```
+sudo mysql
+```
+
 
