@@ -148,12 +148,18 @@ After the installation it is recommended that we run a security script that come
 Start the interactive Script by running:
 This will allow you to configure the VALIDATE PASSWORD PLUGIN.
 ```
-sudo mysql_secure_installation
+$ sudo mysql_secure_installation
 ```
 * To verify access to the MySQL Console, run the following command:
 ```
-sudo mysql
+$ sudo mysql
 ```
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
+## STEP 2 - Installing PHP
 
+We have installed Apache to serve our content and MySQL installed to store and manage our data. PHP is the component of our setup that will process code to display dynamic content to the final user. In addition to the php package, we’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. We’ll also need libapache2-mod-php to enable Apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
+
+* Run the following command to install all 3 packages:
+```
+$ sudo apt -y install php libapache2-mod-php php-mysql
