@@ -150,7 +150,7 @@ This will allow you to configure the VALIDATE PASSWORD PLUGIN.
 ```
 sudo mysql_secure_installation
 ```
-* When you're finished, test if you're able to login to the MySQL Console by typing:
+* To verify access to the MySQL Console, run the following command:
 ```
 sudo mysql
 ```
