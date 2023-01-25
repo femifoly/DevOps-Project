@@ -158,6 +158,10 @@ sudo mysql
 ```
 ![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
+*To exit the MySQL Console, type: exit
+```
+mysql> exit
+```
 ## STEP 3 - Installing PHP
 
 We have installed Apache to serve our content and MySQL installed to store and manage our data. PHP is the component of our setup that will process code to display dynamic content to the final user. In addition to the php package, we’ll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. We’ll also need libapache2-mod-php to enable Apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
@@ -166,6 +170,12 @@ We have installed Apache to serve our content and MySQL installed to store and m
 ```
 sudo apt -y install php libapache2-mod-php php-mysql
 ```
+* Once the installation is finished, you can run the following command to confirm your PHP version:
+```
+php -v
+```
+![]{https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/php.jpg}
+
 At this point, LAMP stack is completely installed and fully operational.
 To test our setup with a PHP Script, it's best to setup a proper Apache Virtual Host to host our website's file and folders. Virtual Host allows multiple websites to be located on a single machine and users of the websites will not even notice it. This will take us to the next step.
 
@@ -199,26 +209,31 @@ This will create a new blank file. Paste in the following bare-bones configurati
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh.jpg)
 * To save and close the file, press ESC and type :wqa!
 * Run the following command to view and confirm the new files in the sites available directory:
 ```
 sudo ls /etc/apache2/sites-available
 ```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh1.jpg)
+
 With this VirtualHost configuration, we’re telling Apache to serve our website using /var/www/projectlamp as the web root directory. If we like to test Apache without a domain name, we can remove or comment out the options ServerName and ServerAlias by adding a # character in the beginning of each option’s lines. Adding the # character there will tell the program to skip processing the instructions on those lines.
 * We can now use a2ensite command to enable the new virtual host:
 ```
 sudo a2ensite projectlamp
 ```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh2.jpg)
 * We might need to disable the default website that comes installed with Apache. This is required if we are not using a custom domain name, because in this case Apache’s default configuration would overwrite our virtual host. To disable Apache’sdefault website use a2dissite command, type:
 ```
 sudo a2dissite 000-default
 ```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh4.jpg)
 * To make sure your configuration file doesn't contain syntax errors, run:
 
 ```
 sudo apache2ctl configtest
 ```
-
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/vh3.jpg)
 * Finally, reload Apache so these changes take effect:
 
 ```
@@ -231,7 +246,12 @@ The new website is now active, but the web root /var/www/projectlamp is still em
 ```
 sudo vi /var/www/projectlamp/index.html
 ```
-
+or
+```
+sudo echo 'Hello LAMP, I am Kolawole Oduremi' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' 
+(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+```
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/html.jpg)
 From the browser, I can open the website URL using IP address:
 
 ```
@@ -242,12 +262,13 @@ or can also browse using the public dns.
 ```
 http://<Public-DNS-Name>:80
 ```
+!{](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/html1.jpg)
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
 To check your Public IP from the Ubuntu shell, run :
 ```
-$(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 
-$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
+(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 
+(curl -s http://169.254.169.254/latest/meta-data/public-ipv4)
 ```
 ## STEP 5 - Enable PHP on the website
 
@@ -273,3 +294,18 @@ This will open a blank file. Add the following text, which is valid PHP code, in
 <?php
 phpinfo();
 ```
+
+When you are finished, save and close the file, refresh the page and you will see a page similar to this :
+!{](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/php1.jpg)
+
+This page provides information about your server from the perspective of PHP. It is useful for debugging and to ensure that your settings are being applied correctly.
+
+If you can see this page in your browser, then your PHP installation is working as expected.
+
+After checking the relevant information about your PHP server through that page, it’s best to remove the file you created as it contains sensitive information about your PHP environment -and your Ubuntu server. You can use rm to do so:
+
+```
+$ sudo rm /var/www/projectlamp/index.php
+```
+Note that it is a good practice to stop or terminate your AWS EC2 instances after the completion of your project.
+Thank You
