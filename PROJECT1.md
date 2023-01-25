@@ -262,7 +262,7 @@ or can also browse using the public dns.
 ```
 http://<Public-DNS-Name>:80
 ```
-!{](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/html1.jpg)
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/html1.jpg)
 You can leave this file in place as a temporary landing page for your application until you set up an index.php file to replace it. Once you do that, remember to remove or rename the index.html file from your document root, as it would take precedence over an index.php file by default.
 
 To check your Public IP from the Ubuntu shell, run :
@@ -296,7 +296,7 @@ phpinfo();
 ```
 
 When you are finished, save and close the file, refresh the page and you will see a page similar to this :
-!{](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/php1.jpg)
+![](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/php1.jpg)
 
 This page provides information about your server from the perspective of PHP. It is useful for debugging and to ensure that your settings are being applied correctly.
 
