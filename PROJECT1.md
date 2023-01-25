@@ -142,23 +142,11 @@ To install mysql-server, run:
 sudo apt -y install mysql-server
 ```
 After the installation it is recommended that we run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lockdown access to our database system.
+[](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql.jpg)
 Start the interactive Script by running:
 ```
 sudo mysql_secure_installation
 ```
-This will ask if you want to configure the VALIDATE PASSWORD PLUGIN.
+This will allo you to configure the VALIDATE PASSWORD PLUGIN.
+[](https://github.com/femifoly/DevOps-Project/blob/main/Project%20Images/mysql1.jpg)
 
-***Note***: Enabling this feature is something of a judgment call. If enabled, passwords which don’t match the specified criteria will be rejected by MySQL with an error. It is safe to leave validation disabled, but you should always use strong, unique passwords for database credentials.
-Answer Y for yes, or anything else to continue without enabling.
-
-VALIDATE PASSWORD PLUGIN can be used to test passwords
-and improve security. It checks the strength of password
-and allows the users to set only those passwords which are
-secure enough. Would you like to setup VALIDATE PASSWORD plugin?
-
-Press y|Y for Yes, any other key for No:
-
-If you answer “yes”, you’ll be asked to select a level of password validation. Keep in mind that if you enter 2 for the strongest level, you will receive errors when attempting to set any password which does not contain numbers, upper and lowercase letters, and special characters, or which is based on common dictionary words.
-If we enabled password validation, we’ll be shown the password strength for the root password we just entered and our server will ask if we want to continue with that password. If we are happy with our current password, enter Y for “yes” at the prompt:
-
-For the rest of the questions, We press Y and hit the ENTER key at each prompt. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes we have made.
